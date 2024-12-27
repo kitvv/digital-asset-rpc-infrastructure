@@ -163,7 +163,7 @@ create table asset_data
     id                    bytea PRIMARY KEY,
     chain_data_mutability chain_mutability not null default 'mutable',
     chain_data            jsonb            not null,
-    metadata_url          varchar(200)     not null,
+    metadata_url          text             not null,
     metadata_mutability   mutability       not null default 'mutable',
     metadata              jsonb            not null,
     slot_updated          bigint           not null
